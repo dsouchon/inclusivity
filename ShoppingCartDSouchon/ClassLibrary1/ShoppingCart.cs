@@ -35,6 +35,17 @@ namespace ShoppingCartLib
             this.TotalPriceExcludingTax = decimal.Round(sum, 2);
         }
 
+        public void AddProduct(Product product, int Count)
+        {
+            int x = 0;
+            while (x < Count)
+            {
+                products.Add(product);
+            }
+
+        }
+
+
         public ShoppingCart()
         {
             products = new EventList<Product>();
