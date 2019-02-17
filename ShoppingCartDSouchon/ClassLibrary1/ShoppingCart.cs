@@ -41,6 +41,7 @@ namespace ShoppingCartLib
             while (x < Count)
             {
                 products.Add(product);
+                x++;
             }
 
         }
