@@ -16,7 +16,7 @@ namespace UnitTestProject1
         /// <param name="testContext"></param>
         // Use ClassInitialize to run code before running the first test in the class
         [ClassInitialize()]
-        public static void InitializeWholeClass(TestContext testContext)
+        public static void InitializeWholeTestContext(TestContext testContext)
         {
           
         }
@@ -40,7 +40,10 @@ namespace UnitTestProject1
 
         // Use TestCleanup to run code after each test has run
         [TestCleanup()]
-        public void MyTestCleanup() { }
+        public void TestCleanupEachTest() {
+
+            shoppingCart = null;
+        }
 
 
         //Step 1 Test: Add products to the shopping cart.
