@@ -18,15 +18,19 @@ namespace UnitTestProject1
         [ClassInitialize()]
         public static void MyClassInitialize(TestContext testContext)
         {
-            shoppingCart = new ShoppingCart();
-            shoppingCart.products = new EventList<Product>();
-            shoppingCart.products.CountChanged += new EventHandler<EventList<Product>.ListEventArgs>(shoppingCart.list_CountChanged);
-
+          
         }
 
         // Use TestInitialize to run code before running each test 
         [TestInitialize()]
-        public void MyTestInitialize() { }
+        public void MyTestInitialize() {
+
+            shoppingCart = new ShoppingCart();
+            shoppingCart.products = new EventList<Product>();
+            shoppingCart.products.CountChanged += new EventHandler<EventList<Product>.ListEventArgs>(shoppingCart.list_CountChanged);
+
+
+        }
 
 
 
@@ -56,7 +60,7 @@ namespace UnitTestProject1
                 x++;
             }
 
-            Assert.AreEqual(shoppingCart.TotalPriceExcludingTax, 199.95M);
+            Assert.AreEqual( 199.95M, shoppingCart.TotalPriceExcludingTax);
         }
 
        //Step 2 Test : Add additional products of the same type to the shopping cart.
@@ -73,7 +77,7 @@ namespace UnitTestProject1
             shoppingCart.AddProduct(product, 3);
 
 
-            Assert.AreEqual(shoppingCart.TotalPriceExcludingTax, 319.92M);
+            Assert.AreEqual( 319.92M, shoppingCart.TotalPriceExcludingTax);
         }
 
         //Step 3: Calculate the tax rate of the shopping cart with multiple items
@@ -88,8 +92,8 @@ namespace UnitTestProject1
 
             shoppingCart.AddProduct(productAxeDeo, 2);
 
-            Assert.AreEqual(shoppingCart.TotalTax, 35.00M);
-            Assert.AreEqual(shoppingCart.TotalPriceIncludingTax, 314.96M);
+            Assert.AreEqual( 35.00M, shoppingCart.TotalTax);
+            Assert.AreEqual( 314.96M, shoppingCart.TotalPriceIncludingTax);
         }
 
     }
