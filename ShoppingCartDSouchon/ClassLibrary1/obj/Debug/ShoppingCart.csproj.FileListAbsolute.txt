@@ -1,4 +1,5 @@
-D:\Work\inclusivity\ShoppingCartDSouchon\ClassLibrary1\bin\Debug\ShoppingCartLib.dll
-D:\Work\inclusivity\ShoppingCartDSouchon\ClassLibrary1\bin\Debug\ShoppingCartLib.pdb
 D:\Work\inclusivity\ShoppingCartDSouchon\ClassLibrary1\obj\Debug\ShoppingCartLib.dll
 D:\Work\inclusivity\ShoppingCartDSouchon\ClassLibrary1\obj\Debug\ShoppingCartLib.pdb
+D:\Work\inclusivity\ShoppingCartDSouchon\ClassLibrary1\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
+D:\ShoppingCartLib.dll
+D:\ShoppingCartLib.pdb

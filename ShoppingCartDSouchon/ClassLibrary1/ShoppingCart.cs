@@ -7,7 +7,7 @@ namespace ShoppingCartLib
     public class ShoppingCart
     {
 
-        public EventList<Product> products { get; set; }
+        public EventList<Product> Products { get; set; }
         public decimal TotalTax { get; set; }
         public decimal TotalPriceExcludingTax { get; set; }
         public decimal TotalPriceIncludingTax { get; set; }
@@ -16,11 +16,10 @@ namespace ShoppingCartLib
 
         public void AddProduct(Product product)
         {
-
-            products.Add(product);
+            Products.Add(product);
         }
 
-        public void list_CountChanged(object sender, EventList<Product>.ListEventArgs e)
+        public void Productlist_CountChanged(object sender, EventList<Product>.ListEventArgs e)
         {
             CalculateTotalPrice();
         }
@@ -28,7 +27,7 @@ namespace ShoppingCartLib
         private void CalculateTotalPrice()
         {
             decimal sum = 0.00M;
-            foreach (var product in products)
+            foreach (var product in Products)
             {
                 sum += product.Price;
 
@@ -40,12 +39,12 @@ namespace ShoppingCartLib
 
         }
 
-        public void AddProduct(Product product, int Count)
+        public void AddProduct(Product product, int count)
         {
             int x = 0;
-            while (x < Count)
+            while (x < count)
             {
-                products.Add(product);
+                Products.Add(product);
                 x++;
             }
 
@@ -54,7 +53,7 @@ namespace ShoppingCartLib
 
         public ShoppingCart(decimal taxRate = 12.5M)
         {
-            products = new EventList<Product>();
+            Products = new EventList<Product>();
             TotalTax = 0.00M;
             TotalPriceIncludingTax = 0.00M;
             TotalPriceExcludingTax = 0.00M;

@@ -4,12 +4,12 @@ D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\Micr
 D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
-D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\UnitTestProject1.dll
-D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
 D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
-D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\UnitTestProject1.dll
-D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
 D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\ShoppingCartUnitTests.csprojResolveAssemblyReference.cache
 D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\ShoppingCartLib.dll
 D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\ShoppingCartLib.pdb
+D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\ShoppingCartUnitTests.dll
+D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\ShoppingCartUnitTests.pdb
+D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\ShoppingCartUnitTests.dll
+D:\Work\inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\ShoppingCartUnitTests.pdb

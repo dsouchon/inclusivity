@@ -6,7 +6,7 @@ using ShoppingCartLib;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class Tests
     {
         //Global Variables
         private static ShoppingCart shoppingCart;
@@ -16,30 +16,27 @@ namespace UnitTestProject1
         /// <param name="testContext"></param>
         // Use ClassInitialize to run code before running the first test in the class
         [ClassInitialize()]
-        public static void MyClassInitialize(TestContext testContext)
+        public static void InitializeWholeClass(TestContext testContext)
         {
           
         }
 
         // Use TestInitialize to run code before running each test 
         [TestInitialize()]
-        public void MyTestInitialize() {
+        public void InitializeEachTest() {
 
-            shoppingCart = new ShoppingCart();
-            shoppingCart.products = new EventList<Product>();
-            shoppingCart.products.CountChanged += new EventHandler<EventList<Product>.ListEventArgs>(shoppingCart.list_CountChanged);
-
+            shoppingCart = new ShoppingCart(12.5M);
+            shoppingCart.Products = new EventList<Product>();
+            shoppingCart.Products.CountChanged += new EventHandler<EventList<Product>.ListEventArgs>(shoppingCart.Productlist_CountChanged);
 
         }
-
-
-
+        
         /// <summary>
         /// TearDown
         /// </summary>
         // Use ClassCleanup to run code after all tests in a class have run
         [ClassCleanup()]
-        public static void MyClassCleanup() { }
+        public static void CleanupWholeTestContext() { }
 
         // Use TestCleanup to run code after each test has run
         [TestCleanup()]
@@ -56,7 +53,7 @@ namespace UnitTestProject1
 
             while (x < 5)
             {
-                shoppingCart.products.Add(product);
+                shoppingCart.Products.Add(product);
                 x++;
             }
 
@@ -64,7 +61,6 @@ namespace UnitTestProject1
         }
 
        //Step 2 Test : Add additional products of the same type to the shopping cart.
-       
        [TestMethod, Description("Given:• An empty shopping cart • And a product, Dove Soap with a unit price of 39.99 When: • The user adds 5 Dove Soaps to the shopping cart • And then adds another 3 Dove Soaps to the shopping cart Then: • The shopping cart should contain 8 Dove Soaps each with a unit price of 39.99 • And the shopping cart’s total price should equal 319.92")]
 
         public void Add5DoveSoapsThen3DoveSoaps()
@@ -73,10 +69,7 @@ namespace UnitTestProject1
             Product product = new Product { Description = "Dove Soap", Price = 39.99M };
 
             shoppingCart.AddProduct(product, 5);
-
             shoppingCart.AddProduct(product, 3);
-
-
             Assert.AreEqual( 319.92M, shoppingCart.TotalPriceExcludingTax);
         }
 
