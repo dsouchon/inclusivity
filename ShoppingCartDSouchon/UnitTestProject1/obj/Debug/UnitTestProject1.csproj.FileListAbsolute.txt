@@ -1,0 +1,7 @@
+D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\OFferzen Job Inclusivity\ShoppingCartDSouchon\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

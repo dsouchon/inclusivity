@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace UnitTestProject1
+namespace ShoppingCartLib
 {
-    internal class ShoppingCart
+    public class ShoppingCart
     {
 
         public EventList<Product> products { get; set; }
@@ -20,10 +20,10 @@ namespace UnitTestProject1
 
         public void list_CountChanged(object sender, EventList<Product>.ListEventArgs e)
         {
-            CalculateTotals();
+            CalculateTotalPrice();
         }
 
-        private void CalculateTotals()
+        private void CalculateTotalPrice()
         {
             decimal sum = 0.00M;
             foreach (var product in products)
@@ -40,10 +40,11 @@ namespace UnitTestProject1
             products = new EventList<Product>();
             TotalTax = 0.00M;
             TotalPriceIncludingTax = 0.00M;
+            TotalPriceExcludingTax = 0.00M;
 
         }
 
-        
+
 
 
     }

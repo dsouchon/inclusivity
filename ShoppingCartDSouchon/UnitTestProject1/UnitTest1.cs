@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using ShoppingCartLib;
 
 namespace UnitTestProject1
 {
@@ -15,13 +16,14 @@ namespace UnitTestProject1
         /// <param name="testContext"></param>
         // Use ClassInitialize to run code before running the first test in the class
         [ClassInitialize()]
-        public static void MyClassInitialize(TestContext testContext) {
+        public static void MyClassInitialize(TestContext testContext)
+        {
             shoppingCart = new ShoppingCart();
             shoppingCart.products = new EventList<Product>();
-            shoppingCart.products.CountChanged += new EventHandler<EventList<Product>.ListEventArgs> (shoppingCart.list_CountChanged);
-           
+            shoppingCart.products.CountChanged += new EventHandler<EventList<Product>.ListEventArgs>(shoppingCart.list_CountChanged);
+
         }
-            
+
         // Use TestInitialize to run code before running each test 
         [TestInitialize()]
         public void MyTestInitialize() { }
@@ -39,7 +41,7 @@ namespace UnitTestProject1
         [TestCleanup()]
         public void MyTestCleanup() { }
 
-              
+
         //Step 1 Test
         [TestMethod, Description("Given:• An empty shopping cart • And a product, Dove Soap with a unit price of 39.99 When: • The user adds 5 Dove Soaps to the shopping cart Then: • The shopping cart should contain 5 Dove Soaps each with a unit price of 39.99 • And the shopping cart’s total price should equal 199.95")]
 
@@ -53,7 +55,7 @@ namespace UnitTestProject1
                 shoppingCart.products.Add(product);
                 x++;
             }
-            
+
             Assert.AreEqual(shoppingCart.TotalPriceExcludingTax, 199.95M);
         }
 
