@@ -14,10 +14,29 @@ namespace ShoppingCartLib
 
         public decimal TaxRate{ get; set; }
 
-        public void AddProduct(Product product)
+        public void AddProduct(Product product, int quantity=1)
         {
-            Products.Add(product);
+            int x = 0;
+            while (x < quantity)
+            {
+                Products.Add(product);
+                x++;
+            }
+
         }
+
+        public void AddProduct(Product product, int quantity = 1, bool addAsRange = true)
+        {
+            List<Product> _products = new List<Product>();
+            int x = 0;
+            while (x < quantity)
+            {
+                _products.Add(product);
+                x++;
+            }
+            this.Products.AddRange(_products);
+        }
+
 
         public void Productlist_CountChanged(object sender, EventList<Product>.ListEventArgs e)
         {
@@ -39,16 +58,7 @@ namespace ShoppingCartLib
 
         }
 
-        public void AddProduct(Product product, int count)
-        {
-            int x = 0;
-            while (x < count)
-            {
-                Products.Add(product);
-                x++;
-            }
-
-        }
+     
 
 
         public ShoppingCart(decimal taxRate = 12.5M)
@@ -60,8 +70,14 @@ namespace ShoppingCartLib
             TaxRate = taxRate;
         }
 
-
-
-
+        public void RemoveProduct(Product product, int quantity)
+        {
+            int x = 0;
+            while (x < quantity)
+            {
+                Products.Remove(product);
+                x++;
+            }
+        }
     }
 }

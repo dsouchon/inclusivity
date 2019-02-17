@@ -83,9 +83,9 @@ namespace ShoppingCartLib
             /// </summary>
             public int Count { get; set; }
             //----------------------------------------------------------
-            public ListEventArgs(int anzahl)
+            public ListEventArgs(int amount)
             {
-                this.Count = anzahl;
+                this.Count = amount;
             }
         }
         #endregion

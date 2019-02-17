@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f490bb16-5eb0-4096-b15b-5e4deb04a9f6" name="Daniel@DANIEL-INSPIRON 2019-02-17 21:28:13" runUser="DANIEL-INSPIRON\Daniel" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="f19e1ac1-eb5d-4559-9a35-caab81bf6730">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Daniel_DANIEL-INSPIRON 2019-02-17 21_28_13" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2019-02-17T21:28:13.3879186+02:00" queuing="2019-02-17T21:28:13.8057735+02:00" start="2019-02-17T21:28:13.9085102+02:00" finish="2019-02-17T21:28:14.3014815+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Add5DoveSoaps" storage="d:\work\inclusivity\shoppingcartdsouchon\unittestproject1\bin\debug\shoppingcartunittests.dll" id="626fd4f1-02ee-0262-d72a-ee093c85720b">
+      <Description>Given:• An empty shopping cart • And a product, Dove Soap with a unit price of 39.99 When: • The user adds 5 Dove Soaps to the shopping cart Then: • The shopping cart should contain 5 Dove Soaps each with a unit price of 39.99 • And the shopping cart’s total price should equal 199.95</Description>
+      <Execution id="94ea3107-1f3f-4ca6-a833-2b7bdad60a75" />
+      <TestMethod codeBase="D:/Work/inclusivity/ShoppingCartDSouchon/UnitTestProject1/bin/Debug/ShoppingCartUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTestProject1.Tests, ShoppingCartUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Add5DoveSoaps" />
+    </UnitTest>
+    <UnitTest name="Add2DoveSoapsThen2AxeDeosDoTax" storage="d:\work\inclusivity\shoppingcartdsouchon\unittestproject1\bin\debug\shoppingcartunittests.dll" id="9903294f-3469-dc3d-8a8f-ed913e007cbe">
+      <Description>Given: • An empty shopping cart • And a product, Dove Soap with a unit price of 39.99 • And another product, Axe Deo with a unit price of 99.99 • And a tax rate of 12.5% When: • The user adds 2 Dove Soaps to the shopping cart • And then adds 2 Axe Deo’s to the shopping cart Then: • The shopping cart should contain 2 Dove Soaps each with a unit price of 39.99 • And the shopping cart should contain 2 Axe Deo’s each with a unit price of 99.99 • And the total tax amount should equal 35.00 • And the shopping cart’s total price should equal 314.96</Description>
+      <Execution id="8eb7d773-c990-4604-9461-946b23c87a58" />
+      <TestMethod codeBase="D:/Work/inclusivity/ShoppingCartDSouchon/UnitTestProject1/bin/Debug/ShoppingCartUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTestProject1.Tests, ShoppingCartUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Add2DoveSoapsThen2AxeDeosDoTax" />
+    </UnitTest>
+    <UnitTest name="Add5DoveSoapsThen3DoveSoaps" storage="d:\work\inclusivity\shoppingcartdsouchon\unittestproject1\bin\debug\shoppingcartunittests.dll" id="6f60ddfd-831a-9cda-93b7-87eec2d5ebd5">
+      <Description>Given:• An empty shopping cart • And a product, Dove Soap with a unit price of 39.99 When: • The user adds 5 Dove Soaps to the shopping cart • And then adds another 3 Dove Soaps to the shopping cart Then: • The shopping cart should contain 8 Dove Soaps each with a unit price of 39.99 • And the shopping cart’s total price should equal 319.92</Description>
+      <Execution id="8cc1f07c-12cd-4d72-83ef-69238f765480" />
+      <TestMethod codeBase="D:/Work/inclusivity/ShoppingCartDSouchon/UnitTestProject1/bin/Debug/ShoppingCartUnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTestProject1.Tests, ShoppingCartUnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Add5DoveSoapsThen3DoveSoaps" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9903294f-3469-dc3d-8a8f-ed913e007cbe" executionId="8eb7d773-c990-4604-9461-946b23c87a58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="626fd4f1-02ee-0262-d72a-ee093c85720b" executionId="94ea3107-1f3f-4ca6-a833-2b7bdad60a75" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f60ddfd-831a-9cda-93b7-87eec2d5ebd5" executionId="8cc1f07c-12cd-4d72-83ef-69238f765480" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8eb7d773-c990-4604-9461-946b23c87a58" testId="9903294f-3469-dc3d-8a8f-ed913e007cbe" testName="Add2DoveSoapsThen2AxeDeosDoTax" computerName="DANIEL-INSPIRON" duration="00:00:00.0128255" startTime="2019-02-17T21:28:13.9374216+02:00" endTime="2019-02-17T21:28:14.2466021+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8eb7d773-c990-4604-9461-946b23c87a58">
+    </UnitTestResult>
+    <UnitTestResult executionId="94ea3107-1f3f-4ca6-a833-2b7bdad60a75" testId="626fd4f1-02ee-0262-d72a-ee093c85720b" testName="Add5DoveSoaps" computerName="DANIEL-INSPIRON" duration="00:00:00.0009403" startTime="2019-02-17T21:28:14.2515826+02:00" endTime="2019-02-17T21:28:14.2545742+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94ea3107-1f3f-4ca6-a833-2b7bdad60a75">
+    </UnitTestResult>
+    <UnitTestResult executionId="8cc1f07c-12cd-4d72-83ef-69238f765480" testId="6f60ddfd-831a-9cda-93b7-87eec2d5ebd5" testName="Add5DoveSoapsThen3DoveSoaps" computerName="DANIEL-INSPIRON" duration="00:00:00.0001512" startTime="2019-02-17T21:28:14.2605915+02:00" endTime="2019-02-17T21:28:14.2625531+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8cc1f07c-12cd-4d72-83ef-69238f765480">
+    </UnitTestResult>
+  </Results>
+</TestRun>
